@@ -1,0 +1,164 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    --background: 10 10% 4%;
+    --foreground: 120 10% 95%;
+
+    --card: 10 10% 6%;
+    --card-foreground: 120 10% 95%;
+
+    --popover: 10 10% 8%;
+    --popover-foreground: 120 10% 95%;
+
+    --primary: 142 100% 50%;
+    --primary-foreground: 10 10% 4%;
+
+    --secondary: 10 10% 12%;
+    --secondary-foreground: 120 10% 85%;
+
+    --muted: 10 10% 8%;
+    --muted-foreground: 120 5% 60%;
+
+    --accent: 200 100% 50%;
+    --accent-foreground: 10 10% 4%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 10 10% 15%;
+    --input: 10 10% 12%;
+    --ring: 142 100% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 10 10% 6%;
+    --sidebar-foreground: 120 10% 85%;
+    --sidebar-primary: 142 100% 50%;
+    --sidebar-primary-foreground: 10 10% 4%;
+    --sidebar-accent: 10 10% 12%;
+    --sidebar-accent-foreground: 120 10% 85%;
+    --sidebar-border: 10 10% 15%;
+    --sidebar-ring: 142 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-['Poppins'];
+    scroll-behavior: smooth;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-card/20 backdrop-blur-lg border border-border/30;
+  }
+  
+  .neon-glow {
+    box-shadow: 0 0 20px theme('colors.primary.DEFAULT'), 0 0 40px theme('colors.primary.DEFAULT'), 0 0 80px theme('colors.primary.DEFAULT');
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/25;
+  }
+  
+  .section-padding {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+
+  .bg-grid-pattern {
+    background-image: 
+      linear-gradient(rgba(0, 255, 136, 0.03) 2px, transparent 2px),
+      linear-gradient(90deg, rgba(0, 255, 136, 0.03) 2px, transparent 2px);
+    background-size: 60px 60px;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out;
+  }
+
+  .animate-fade-in-delay {
+    animation: fadeIn 1.2s ease-out 0.3s both;
+  }
+
+  .animate-fade-in-slow {
+    animation: fadeIn 1.5s ease-out;
+  }
+
+  .animate-slide-fade {
+    animation: slideUp 0.8s ease-out, fadeIn 0.8s ease-out;
+  }
+
+  .animate-scale-fade {
+    animation: scaleFade 0.6s ease-out;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 20px theme('colors.primary.500'); }
+  to { box-shadow: 0 0 30px theme('colors.primary.DEFAULT'), 0 0 40px theme('colors.primary.DEFAULT'); }
+}
+
+@keyframes slideUp {
+  from { 
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to { 
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleFade {
+  from { 
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to { 
+    opacity: 1;
+    transform: scale(1);
+  }
+}
