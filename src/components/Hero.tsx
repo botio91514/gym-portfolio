@@ -28,39 +28,39 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div className="text-center lg:text-left animate-slide-fade">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-black mb-4 sm:mb-6 leading-tight animate-fade-in">
-              TRANSFORM YOUR
+            TRANSFORM YOUR
               <span className="block text-gradient animate-glow animate-fade-in-delay mt-2">BODY & MIND</span>
-            </h1>
+          </h1>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-6 sm:mb-8 leading-relaxed animate-fade-in-delay">
               Unlock your true potential with professional personal training, expert nutrition guidance, and a supportive community that will push you to achieve extraordinary results.
-            </p>
+          </p>
             <div ref={ctaRef as any} className={`flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start items-center transition-all duration-1000 ${isCtaVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-              <Button
-                onClick={() => scrollToSection("contact")}
+            <Button
+              onClick={() => scrollToSection("contact")}
                 className="btn-primary text-base sm:text-lg px-6 sm:px-10 py-4 sm:py-6 w-full sm:w-auto animate-glow hover:animate-pulse transition-all duration-300"
-              >
-                START YOUR JOURNEY
-              </Button>
-              <Button
+            >
+              START YOUR JOURNEY
+            </Button>
+            <Button
                 onClick={() => scrollToSection("gallery")}
-                variant="outline"
+              variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 text-base sm:text-lg px-6 sm:px-10 py-4 sm:py-6 w-full sm:w-auto hover:animate-pulse"
-              >
+            >
                 View Gallery
-              </Button>
-            </div>
+            </Button>
+          </div>
             <div ref={statsRef as any} className={`mt-12 sm:mt-16 grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-2xl mx-auto lg:mx-0 transition-all duration-1000 ${isStatsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <div className="text-center p-4 bg-background/50 backdrop-blur-sm rounded-lg">
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">
                   {clientsCount}+
                 </div>
-                <div className="text-sm text-muted-foreground">Clients Trained</div>
-              </div>
+              <div className="text-sm text-muted-foreground">Clients Trained</div>
+            </div>
               <div className="text-center p-4 bg-background/50 backdrop-blur-sm rounded-lg">
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">
                   {yearsCount}+
                 </div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
+              <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
               <div className="text-center p-4 bg-background/50 backdrop-blur-sm rounded-lg">
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">
