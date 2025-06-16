@@ -29,7 +29,7 @@ const About = () => {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               <Card className="glass-card p-4 sm:p-6 hover:scale-105 transition-transform duration-300">
-                <div className="text-xl sm:text-2xl font-bold text-primary mb-1 sm:mb-2">NASM</div>
+                <div className="text-xl sm:text-2xl font-bold text-primary mb-1 sm:mb-2">ACE</div>
                 <div className="text-xs sm:text-sm text-muted-foreground">Certified Personal Trainer</div>
               </Card>
               
@@ -89,7 +89,7 @@ const About = () => {
                   />
                 </div>
                 <div className="mt-4 sm:mt-6 text-center">
-                  <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">Alex Johnson</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">Maulin Christian</h3>
                   <p className="text-sm sm:text-base text-primary font-semibold">Elite Personal Trainer & Gym Owner</p>
                   <p className="text-xs sm:text-sm text-muted-foreground mt-2">
                     "Transforming lives through fitness is not just my profession, it's my passion."

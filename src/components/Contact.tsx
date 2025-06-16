@@ -144,7 +144,7 @@ Message: ${formData.message}`;
                 </div>
                 <div className="flex items-center space-x-3">
                   <span className="text-primary">📍</span>
-                  <span className="text-sm sm:text-base">Elite Fitness Gym, 123 Strength St, Fitness City</span>
+                  <span className="text-sm sm:text-base">Fitness Factory Gym, 123 Strength St, Fitness City</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <span className="text-primary">🕒</span>
@@ -154,7 +154,7 @@ Message: ${formData.message}`;
             </Card>
 
             <Card className="glass-card p-4 sm:p-6">
-              <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-primary">Why Choose FitPro?</h3>
+              <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-primary">Why Choose Maulin Christian ?</h3>
               <ul className="space-y-2 sm:space-y-3">
                 <li className="flex items-center space-x-3">
                   <span className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></span>
