@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { Instagram, Facebook } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -27,7 +28,7 @@ const Contact = () => {
     e.preventDefault();
     
     // Create WhatsApp message
-    const whatsappMessage = `Hi Alex! I'm interested in personal training.
+    const whatsappMessage = `Hi Maulin! I'm interested in personal training.
     
 Name: ${formData.name}
 Email: ${formData.email}
@@ -35,12 +36,12 @@ Phone: ${formData.phone}
 Fitness Goal: ${formData.goal}
 Message: ${formData.message}`;
     
-    const whatsappUrl = `https://wa.me/1234567890?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/7778835090?text=${encodeURIComponent(whatsappMessage)}`;
     window.open(whatsappUrl, '_blank');
     
     toast({
       title: "Redirecting to WhatsApp",
-      description: "You'll be connected with Alex shortly!",
+      description: "You'll be connected with Maulin shortly!",
     });
     
     // Reset form
@@ -136,19 +137,31 @@ Message: ${formData.message}`;
               <div className="space-y-3 sm:space-y-4">
                 <div className="flex items-center space-x-3">
                   <span className="text-primary">📱</span>
-                  <span className="text-sm sm:text-base">+1 (555) 123-4567</span>
+                  <span className="text-sm sm:text-base">+91 77788 35090</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <span className="text-primary">✉️</span>
-                  <span className="text-sm sm:text-base">alex@fitprotrainer.com</span>
+                  <span className="text-sm sm:text-base">MaulinEliteTrainer@gmail.com</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Instagram className="text-primary h-5 w-5" />
+                  <a href="https://www.instagram.com/maulinchristian/" target="_blank" rel="noopener noreferrer" className="text-sm sm:text-base hover:underline">
+                    @maulinchristian
+                  </a>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Facebook className="text-primary h-5 w-5" />
+                  <a href="https://www.facebook.com/maulin.christian/" target="_blank" rel="noopener noreferrer" className="text-sm sm:text-base hover:underline">
+                    Maulin Christian
+                  </a>
                 </div>
                 <div className="flex items-center space-x-3">
                   <span className="text-primary">📍</span>
-                  <span className="text-sm sm:text-base">Fitness Factory Gym, 123 Strength St, Fitness City</span>
+                  <span className="text-sm sm:text-base">Fitness Factory Gym,Rangaipura, Petlad, Gujarat</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <span className="text-primary">🕒</span>
-                  <span className="text-sm sm:text-base">Mon-Fri: 6AM-10PM | Sat-Sun: 8AM-8PM</span>
+                  <span className="text-sm sm:text-base">Mon-sat: 5AM-9AM |4PM-8PM Sun: closed</span>
                 </div>
               </div>
             </Card>
@@ -181,7 +194,7 @@ Message: ${formData.message}`;
 
             <div className="text-center">
               <Button
-                onClick={() => window.open('https://wa.me/1234567890', '_blank')}
+                onClick={() => window.open('https://wa.me/917778835090', '_blank')}
                 className="btn-primary text-sm sm:text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 animate-glow"
               >
                 💬 Chat on WhatsApp

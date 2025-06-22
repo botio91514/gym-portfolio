@@ -10,32 +10,39 @@ const Testimonials = () => {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
+      name: "Bhavik Patel",
       role: "Marketing Executive",
-      content: "Alex transformed my life completely! I lost 40lbs in 6 months and gained confidence I never knew I had. His personalized approach and constant motivation made all the difference.",
+      content: "Maulin transformed my life completely! I lost 40lbs in 6 months and gained confidence I never knew I had. His personalized approach and constant motivation made all the difference.",
       rating: 5,
       image: "👩‍💼"
     },
     {
-      name: "Mike Rodriguez",
+      name: "Mayank Parmar",
       role: "Software Engineer",
       content: "Best investment I've ever made. Alex's training helped me build strength and muscle while teaching me proper form. The nutrition guidance was game-changing!",
       rating: 5,
       image: "👨‍💻"
     },
     {
-      name: "Emily Davis",
+      name: "Ravi Patel",
       role: "Teacher",
-      content: "I was intimidated by gyms before meeting Alex. His patient approach and encouraging attitude made me feel comfortable from day one. Now I'm stronger than ever!",
+      content: "Best gym in the area! Trainers are very supportive and the atmosphere is full of energy. I joined 3 months back and already seeing great transformation. Thank you Fitness Factory! ",
       rating: 5,
       image: "👩‍🏫"
     },
     {
-      name: "James Wilson",
+      name: "Pooja Sharma",
       role: "Business Owner",
-      content: "Alex doesn't just train your body, he transforms your mindset. His holistic approach to fitness and nutrition helped me achieve goals I thought were impossible.",
+      content: " Fitness Factory ka environment bahut motivating hai. Clean space, good equipment, and perfect for both beginners and serious bodybuilders.",
       rating: 5,
       image: "👨‍💼"
+    },
+    {
+      name: "Ravi Patel",
+      role: "Teacher",
+      content: "Affordable fees, modern machines, and positive vibes! This gym really pushes you to become the best version of yourself.",
+      rating: 5,
+      image: "👩‍🏫"
     }
   ];
 

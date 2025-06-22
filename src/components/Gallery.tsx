@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import LazyVideo from './LazyVideo';
 
 const Gallery = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -178,14 +179,9 @@ const Gallery = () => {
         <div className="flex flex-col md:flex-row justify-center items-stretch gap-6 mt-8 w-full">
           <div className="flex flex-col items-center w-full md:w-1/2 max-w-xl mx-auto">
             <div className="bg-black flex items-center justify-center rounded-xl overflow-hidden w-full aspect-video">
-              <video
+              <LazyVideo
                 src="/vdo1.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
                 className="w-full h-full object-cover"
-                style={{ background: 'black' }}
               />
             </div>
             <div className="mt-3 text-center px-2">
@@ -195,19 +191,29 @@ const Gallery = () => {
           </div>
           <div className="flex flex-col items-center w-full md:w-1/2 max-w-xl mx-auto">
             <div className="bg-black flex items-center justify-center rounded-xl overflow-hidden w-full aspect-video">
-              <video
+              <LazyVideo
                 src="/vdo2.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
                 className="w-full h-full object-cover"
-                style={{ background: 'black' }}
               />
             </div>
             <div className="mt-3 text-center px-2">
               <h3 className="text-base sm:text-lg font-bold text-primary break-words">Client Transformations</h3>
               <p className="text-xs sm:text-sm text-muted-foreground break-words">See the amazing progress and results achieved by our members.</p>
+            </div>
+          </div>
+        </div>
+        {/* Centered vdo3.mp4 below the two videos */}
+        <div className="flex justify-center items-center mt-8 w-full">
+          <div className="flex flex-col items-center w-full md:w-1/2 max-w-xl mx-auto">
+            <div className="bg-black flex items-center justify-center rounded-xl overflow-hidden w-full aspect-video">
+              <LazyVideo
+                src="/vdo3.mp4"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="mt-3 text-center px-2">
+              <h3 className="text-base sm:text-lg font-bold text-primary break-words">Maruti susuki Arena Fest</h3>
+              <p className="text-xs sm:text-sm text-muted-foreground break-words">Take a virtual tour of arena competition.</p>
             </div>
           </div>
         </div>
