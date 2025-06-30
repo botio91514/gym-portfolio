@@ -109,8 +109,8 @@ const Stats = () => {
             </div>
             {/* Impact Text Below Videos */}
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-center mt-8 mb-4">
-              Numbers don't lie. Here's the impact we've made together with our community.
-            </p>
+            Numbers don't lie. Here's the impact we've made together with our community.
+          </p>
           </div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">

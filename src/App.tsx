@@ -7,15 +7,15 @@ const queryClient = new QueryClient();
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
+  <QueryClientProvider client={queryClient}>
       <Router>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
-    </QueryClientProvider>
-  );
+  </QueryClientProvider>
+);
 }
 
 export default App;
